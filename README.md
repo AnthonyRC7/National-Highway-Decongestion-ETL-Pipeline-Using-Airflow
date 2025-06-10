@@ -11,20 +11,6 @@ National highways experience congestion due to poor coordination and visibility 
 - **Requests** – For downloading external files
 - **Tarfile** – For extracting `.tgz` files
 
-## Project Structure
-
-airflow/
-└── dags/
-└── python_etl/
-├── staging/
-│ ├── tolldata.tgz
-│ ├── vehicle-data.csv
-│ ├── tollplaza-data.tsv
-│ ├── payment-data.txt
-│ └── [Intermediate files]
-└── etl_toll_data.py
-
-
 ## Pipeline Overview
 
 The DAG (`ETL_toll_data`) runs daily and performs the following tasks:
@@ -51,5 +37,14 @@ cd airflow-etl-toll-data
 3. Place the DAG Python script (etl_toll_data.py) in your airflow/dags directory.
 
 4. Start the Airflow web server and scheduler.
+
+```bash
 airflow webserver --port 8080
 airflow scheduler
+```
+5. Enable the DAG named ETL_toll_data from the Airflow UI and trigger it manually or wait for the schedule.
+
+## Sample Output
+The final output is a transformed CSV file with the following columns:
+
+Rowid, Timestamp, Anonymized Vehicle number, Vehicle type, Number of axles, Tollplaza id, Tollplaza code, Type of Payment Code, Vehicle Code
