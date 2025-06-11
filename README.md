@@ -1,7 +1,10 @@
 # National-Highway-Decongestion-ETL-Pipeline-Using-Airflow
-## Problem Statement
 
-National highways experience congestion due to poor coordination and visibility across toll operators. Each operator maintains traffic data using different IT systems and file formats. The goal of this project is to create a centralized pipeline that processes and unifies this heterogeneous data, enabling better decision-making for traffic flow optimization.
+## Problem Statement
+National highways experience significant congestion due to poor coordination and limited visibility across toll operators. Each operator maintains traffic data in different IT systems and file formats, causing inconsistencies in data exchange and analysis. Without a unified approach, decision-making for traffic flow optimization becomes inefficient, leading to delays and economic losses.
+
+## Goal
+This project aims to create a centralized pipeline that processes and unifies heterogeneous toll data, enabling seamless integration across toll operators. By standardizing data formats and enhancing coordination, the solution will facilitate real-time traffic analysis and improved decision-making, ultimately reducing congestion and enhancing highway efficiency.
 
 ## Technologies Used
 
